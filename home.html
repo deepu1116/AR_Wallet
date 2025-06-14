@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ARWallet Home</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff0f0;
+      font-family: Arial, sans-serif;
+      color: #d60000;
+    }
+    header {
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 1em;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .nav-links a {
+      margin-left: 1em;
+      text-decoration: none;
+      color: #d60000;
+      font-weight: bold;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5em;
+    }
+    .circle-button {
+      background: #d60000;
+      color: white;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1em;
+      font-size: 1.1em;
+      font-weight: bold;
+      box-shadow: 0 0 10px rgba(214, 0, 0, 0.3);
+      cursor: pointer;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>ARWallet</strong></div>
+    <div class="nav-links">
+      <a href="#">Balance</a>
+      <a href="#">Transactions</a>
+      <a href="#">About Us</a>
+      <a href="#">Customer Service</a>
+    </div>
+  </header>
+  <main>
+    <div class="circle-button" onclick="alert('Buy ARB clicked!')">Buy ARB</div>
+    <div class="circle-button" onclick="alert('Sell ARB clicked!')">Sell ARB</div>
+  </main>
+</body>
+</html>

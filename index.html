@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ARWallet Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #d60000;
+    }
+    .login-container {
+      background: white;
+      padding: 2em;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(214, 0, 0, 0.2);
+      width: 90%;
+      max-width: 360px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 1em;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 0.8em;
+      margin: 0.5em 0;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #d60000;
+      color: white;
+      padding: 0.8em;
+      border: none;
+      border-radius: 10px;
+      width: 100%;
+      font-size: 1em;
+      margin-top: 1em;
+      cursor: pointer;
+    }
+    .error {
+      color: red;
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login to ARWallet</h2>
+    <input type="text" id="mobile" placeholder="Mobile Number" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <div class="error" id="error"></div>
+  </div>
+
+  <script>
+    function login() {
+      const mobile = document.getElementById('mobile').value;
+      const password = document.getElementById('password').value;
+      const errorDiv = document.getElementById('error');
+
+      if (mobile === "7981920793" && password === "Chinnu793") {
+        window.location.href = "home.html";
+      } else {
+        errorDiv.innerText = "User not found or incorrect credentials.";
+      }
+    }
+  </script>
+</body>
+</html>
